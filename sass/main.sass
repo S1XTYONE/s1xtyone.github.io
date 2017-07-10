@@ -1,0 +1,351 @@
+
+@import "_settings.sass"
+
+*
+    margin: 0
+    padding: 0
+
+html,body
+    margin: 0
+    padding: 0
+    font-family: $font-family
+    
+.displayflex
+    display: flex !important
+    transition: 0.5s ease-in-out
+
+/* HEADER MUNU */
+    
+.headerMenu
+    display: flex
+    justify-content: center
+    align-items: center
+    padding: 0
+    border-bottom: 1px solid #d9d9d9
+    height: 80px
+    li
+        display: inline-block
+        padding-right: 75px
+        &:last-child
+            padding-right: 0
+        a
+            color: $link-color
+            text-decoration: none
+            font-size: 14px
+            transition: 1s
+            &:hover
+                color: $primary-textcolor
+                transition: 1s
+            
+.menuButton
+    background-image: url(../img/hamburger.png)
+    width: 50px
+    height: 50px
+    background-size: cover
+    margin: 10px auto
+            
+@media (max-width: 767px)
+    .menuButton
+        display: block
+    .headerMenu
+        height: 100%
+        -webkit-flex-flow: column wrap
+        flex-flow: column wrap
+        justify-content: space-between
+        display: none
+        padding: 0
+    .headerMenu li
+        text-align: center
+        padding: 30px 0
+        
+    .container
+        padding: 0 10px
+        
+    .small
+        display: block !important
+
+    .large
+        display: none
+        
+            
+/* HEADER MUNU END */
+
+/* WRAPPER CONTAINER */
+.container
+    max-width: 768px
+    margin: 0 auto
+    text-align: center
+    padding-bottom: 70px
+    
+/* WRAPPER CONTAINER END */
+
+/* HEADERS */
+    
+h1
+    font-size: 70px
+    font-weight: 100
+    padding-top: 110px
+    
+h4
+    font-size: 30px
+    font-weight: 300
+    margin-top: 21px
+    margin-bottom: 46px
+    
+/* HEADERS END */
+    
+/* MAIN BLOCK/FORM */
+    
+.mainForm
+    display: flex
+    flex-direction: column
+    justify-content: center
+    
+.icon
+    width: 47px
+    height: 47px
+    margin: 0 auto
+    display: block
+    margin-top: 59px //icon styles
+    
+.select2
+    &:after
+        transform: rotate(180deg)
+    
+.select
+    border: 1px solid #e5e5e5
+    border-radius: 5px
+    padding: 16px 80px
+    width: 159px
+    margin: 0 auto
+    font-size: 23px
+    color: $primary-textcolor
+    margin-bottom: 25px
+    text-align: center
+    text-align-last: center
+    -webkit-appearance: none
+    -moz-appearance: none
+    appearance: none
+    position: relative
+    display: block
+    &:after
+        content: ' '
+        background-image: url(../img/selectArrow.png)
+        position: absolute
+        width: 14px
+        height: 8px
+        top: 28px
+        right: 25px
+    span
+        color: $primary-textcolor
+        &:hover
+            cursor: pointer
+    ul
+        display: none
+        background: #fff
+        box-shadow: 0 0 10px rgba(0,0,0,0.3)
+        text-align: center
+        width: 318px
+        position: absolute
+        top: 105%
+        left: 0
+        list-style: none
+        margin: 0
+        padding: 0
+        z-index: 10
+        border-radius: 5px
+        li
+            font-size: 20px
+            column-rule: $link-color
+            display: block
+            color: $link-color
+            padding: 11px 
+            line-height: 22px
+            &:hover
+                color: $primary-textcolor
+                background-color: #e5e5e5
+                cursor: pointer
+        
+
+input[type=text]
+    border: 1px solid #e5e5e5
+    color: $primary-textcolor
+    border-radius: 5px
+    padding: 16px 0
+    margin-left: 16.5%
+    margin-right: 16.5%
+    font-size: 23px
+    margin-bottom: 25px
+    text-align: center
+    &:focus
+        outline: none  //text input styles
+
+::-webkit-input-placeholder
+    color: $secondary-textcolor
+
+::-moz-placeholder
+    color: $secondary-textcolor
+
+::-ms-input-placeholder
+    color: $secondary-textcolor
+
+::-webkit-select-placeholder
+    color: $secondary-textcolor
+
+::-moz-placeholder
+    color: $secondary-textcolor
+
+::-ms-select-placeholder
+    color: $secondary-textcolor
+
+/* checkbox styles */
+    
+.checkboxes
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    flex-wrap: wrap
+    margin-bottom: 50px
+    
+.col
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    margin-bottom: 10px
+    
+.checkbox
+    cursor: pointer
+    float: left
+    input
+        display: none
+        &:checked + .boxStyle
+            background-color: #50649a
+            &:after
+                content: ' '
+                position: absolute
+                width: 13px
+                height: 9px
+                background-image: url(../img/checkbox.png)
+                top: 5px
+                left: 3px
+    .boxStyle
+        position: relative
+        display: block
+        float: left
+        width: 18px
+        height: 18px
+        border: 1px solid #50649a
+        border-radius: 3px
+        transition: .2s
+        margin-right: 13px
+        margin-bottom: 15px
+        &:hover
+            background-color: #e9efff
+        transition: .2s
+            
+/* checkbox styles end */
+
+/* range input styles */
+            
+input[type=range]
+    background-color: transparent
+    -webkit-appearance: none
+    width: 100%
+    margin-bottom: 23px
+    &::-webkit-slider-thumb
+        -webkit-appearance: none
+        background-image: url(../img/slider.png)
+        width: 22px
+        height: 25px
+        cursor: pointer
+        margin-top: 20px
+        margin-left: -10px
+    &::-moz-range-thumb
+        background-image: url(../img/slider.png)
+        width: 22px
+        height: 25px
+        cursor: pointer
+        margin-top: 20px
+    &::-ms-thumb
+        background-image: url(../img/slider.png)
+        width: 22px
+        height: 25px
+        cursor: pointer
+        margin-top: 20px
+        
+    &::-webkit-slider-runnable-track
+        width: 100%
+        height: 14px
+        background: url(../img/sliderLine.png) no-repeat center top
+    &:focus
+        outline: none
+    &::-ms-track
+        cursor: pointer
+        width: 100%
+        background: transparent
+        border-color: transparent
+        color: transparent
+            
+.sliderValues
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: flex-end
+    .last
+        text-align: right !important
+    .sliderValue
+        width: 25%
+        font-size: 14px
+        font-weight: 300
+        text-align: left
+        margin-bottom: 8px
+        &:after
+            content: ' '
+            height: 19px
+            width: 1px
+            border-left: 1px dotted #b3b3b3
+            margin-top: 8px
+            display: block
+        
+/* range input styles end */
+
+textarea.small
+    display: none
+    resize: none
+    margin: 33px auto
+    padding: 20px
+    font-size: 20px
+    border: 1px solid #e8e8e8
+    border-radius: 3px 
+        
+textarea.large
+    resize: none
+    margin: 33px auto
+    padding: 20px
+    font-size: 20px
+    border: 1px solid #e8e8e8
+    border-radius: 3px 
+    width: 520px
+    &:focus
+        outline: none            //'about' textarea styles
+    
+input[type=submit]
+    background-color: $link-color
+    color: #fff
+    font-size: 16px
+    padding: 13px 33px
+    width: 115px
+    cursor: pointer
+    margin: 40px auto
+    border: none
+    border-radius: 5px
+    &:hover
+        background-color: #4b64a3
+    &:focus
+        outline: none           //'Готово' button styles
+    
+/* MAIN BLOCK/FORM END*/
+
+
+lastHeader
+    margin-bottom: 38px
