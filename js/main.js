@@ -1,4 +1,8 @@
 $(document).ready(function() {
+    var value = $('.range').attr("value");
+    if(value === "0"){
+        $('.static').addClass('db');
+    }
   $("a.scroll").click(function() {
     var elementClick = $(this).attr("href")
     var destination = $(elementClick).offset().top;
@@ -46,12 +50,46 @@ $(document).ready(function() {
     })
 
     $('.select span, .select ul li').click(function(e){
-        e.preventDefault();
-        $(".select").toggleClass('select2');
-    });    
+            e.preventDefault();
+            $(".select").toggleClass('select2');
+        });    
 
-    // On click out hide the UL
-    $(document).on('click', function() {
-      $('.select ul').fadeOut();
-    });
+        // On click out hide the UL
+        $(document).on('click', function() {
+          $('.select ul').fadeOut();
+        });
+
+        $('.slider').slider({
+          animate: true,
+          range: 'min',
+          value: 2,
+          min: 0,
+          max: 3,
+          step: 1,
+
+          slide: function(event, ui) {
+            $('input.range').val(ui.value);
+          },
+
+          change: function(event, ui) {
+            $('input.range').val(ui.value);
+          }
+
+        });
+    
+    $(".mainForm").submit(function() {
+		var th = $(this);
+		$.ajax({
+			type: "POST",
+			url: "mail.php",
+			data: th.serialize()
+		}).done(function() {
+			alert("Спасибо!");
+			setTimeout(function() {
+				// функции
+				th.trigger("reset");
+			}, 1000);
+		});
+		return false;
+	});
 });
