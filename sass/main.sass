@@ -276,38 +276,36 @@
                 color: #fff
                 
 .mfp-content
-    max-width: 500px
+    max-width: 650px
     
 .white-popup-block
     background-color: #fff
     padding: 10px
+    border-radius: 30px
+    text-align: center
+    h1
+        font-size: 28px
+    p
+        font-size: 18px
     input
-        display: block
-        width: 100%
-        padding: 10px 5px
-        border-radius: 5px
-        -webkit-appearance: none
-        appearance: none
-        border: 1px solid #6d6d6d
-        margin: 5px 0
+        border: 1px solid
     textarea
-        display: block
-        padding: 10px 5px
-        border-radius: 5px
-        border: 1px solid #6d6d6d
-        margin: 5px 0
-        width: 100%    
+          
+    
+.footer_row
+    display: flex
+    flex-direction: row
         
 @media screen and (max-width: 1033px)
+    .wrapper
+        padding: 0 10px
     .city
         margin-right: 10px
     .search
         form
             input
                 width: 80%
-                margin: 0 5px
-    .breadcrumbs
-        margin-left: 5px  
+                margin: 0 5px 
         
 @media screen and (max-width: 976px)
     .header
@@ -321,6 +319,9 @@
         justify-content: center
         flex: 1
         padding: 10px 0
+    .main
+        h1
+            font-size: 27px
         
 @media screen and (max-width: 840px)
     .tab__item
@@ -339,21 +340,20 @@
 @media screen and (max-width: 730px)
     .tab__item
         flex-direction: column
-        padding: 40px 10px
+        padding: 40px 10px 40px 0
         &-btn
             position: relative
             left: 5px
             width: 100px
     .footer
         flex-direction: column
+    .footer_row
+        margin-bottom: 30px
             
 @media screen and (max-width: 382px)
-    .header_r__row
-        flex-direction: column
     .brr, .bor, .bbr
-        width: auto
-        margin-right: 0
-        margin-bottom: 5px
+        font-size: 11px
     .phoner
-        padding-left: 0
-        text-align: left
+        font-size: 10px
+        span
+            font-size: 10px
