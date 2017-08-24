@@ -10,6 +10,9 @@
     align-items: center
     padding: 12px 0
     
+.header_responsive
+    display: none
+    
 .bb
     background: url(../images/bb.png) #0b8aff no-repeat center left
     color: #fff
@@ -34,6 +37,56 @@
         border-radius: 50%
         top: 2px
         right: 2px
+    
+.bbr
+    background: url(../images/bb.png) #0b8aff no-repeat center left
+    color: #fff
+    border-radius: 5px
+    font-size: 14px
+    padding: 10px 0 10px 35px
+    position: relative
+    margin-right: 5px
+    width: 50%
+    transition: .5s
+    &:hover
+        background-color: #005aac
+        transition: .5s
+    &:after
+        content: ' '
+        position: absolute
+        width: 9px
+        height: 9px
+        background: #fff10b
+        -moz-border-radius: 50%
+        -webkit-border-radius: 50%
+        border-radius: 50%
+        top: 2px
+        right: 2px
+    
+.brr
+    background: url(../images/br.png) #de133e no-repeat center left
+    color: #fff
+    border-radius: 5px
+    font-size: 14px
+    width: 50%
+    padding: 10px 0 10px 35px
+    margin-right: 5px
+    transition: .5s
+    &:hover
+        background-color: #b50026
+        transition: .5s
+        
+.bor
+    background: url(../images/bo.png) #ff8300 no-repeat center left
+    color: #fff
+    width: 50%
+    border-radius: 5px
+    font-size: 14px
+    padding: 10px 0 10px 35px
+    transition: .5s
+    &:hover
+        background-color: #c06300
+        transition: .5s
     
 .city
     font-size: 14px
@@ -73,6 +126,14 @@
     font-size: 14px
     span
         font-size: 18px
+        
+.phoner
+    text-align: right
+    font-size: 14px
+    width: 50%
+    padding-left: 35px
+    span
+        font-size: 18px        
         
 .main
     display: flex
@@ -238,20 +299,28 @@
         width: 100%    
         
 @media screen and (max-width: 1033px)
-    .header
-        flex-direction: column
-    .br, .bb, .bo
-        margin: 5px 0
-        width: 50%
     .city
-        margin-right: 0
+        margin-right: 10px
     .search
         form
             input
                 width: 80%
                 margin: 0 5px
     .breadcrumbs
-        margin-left: 5px   
+        margin-left: 5px  
+        
+@media screen and (max-width: 976px)
+    .header
+        display: none
+    .header_responsive
+        display: flex
+        flex-direction: column
+        padding: 10px
+    .header_r__row
+        display: flex
+        justify-content: center
+        flex: 1
+        padding: 10px 0
         
 @media screen and (max-width: 840px)
     .tab__item
