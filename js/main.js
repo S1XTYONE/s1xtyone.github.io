@@ -26,5 +26,10 @@ $(document).ready(function() {
           });
 
         });
+        $(function() {
+
+          $('select').styler();
+
+        });
         })(jQuery);
 });
