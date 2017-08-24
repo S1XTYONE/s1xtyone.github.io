@@ -24,9 +24,6 @@
     margin-right: 23px
     transition: .5s
     display: block
-    &:hover
-        background-color: #005aac
-        transition: .5s
     &:after
         content: ' '
         position: absolute
@@ -127,6 +124,8 @@
     font-size: 14px
     span
         font-size: 18px
+    a
+        color: #333
         
 .phoner
     text-align: right
@@ -178,6 +177,8 @@
             height: 35px
             width: 35px
             background: url(../images/search.png)
+            background-repeat: no-repeat
+            margin-top: 3px
             &:hover
                 cursor: pointer
             
@@ -224,10 +225,12 @@
     margin: 25px 0 0 0 
     padding: 9px 0
     border-bottom: 1px solid #e6e6e6
+    -webkit-tap-highlight-color: rgba(0,0,0,0)
     li
         list-style: none
         display: inline
         padding: 9px 22px
+        -webkit-tap-highlight-color: rgba(0,0,0,0)
     &:hover
         cursor: pointer
     .active
@@ -310,6 +313,7 @@
         margin: 0 auto
         resize: vertical
         width: 60%
+        margin-bottom: 10px
     input[type=submit]
         background-color: #ff8300
         color: #fff
@@ -341,9 +345,24 @@
         justify-content: center
         flex: 1
         padding: 10px 0
+    .search
+        padding: 0 10px
+        input
+            font-size: 9px
     .main
         h1
             font-size: 27px
+    .tabs__content-item
+        margin-left: auto
+        margin-right: auto
+    .tabs__caption
+        margin-left: 6%
+    .breadcrumbs
+        padding-left: 25px
+    .tabs__content-item:last-child
+        margin-right: auto
+    .tabs__content-pagination
+        text-align: center
         
 @media screen and (max-width: 840px)
     .tab__item
