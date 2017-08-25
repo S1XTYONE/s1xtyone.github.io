@@ -18,6 +18,13 @@
 
 $grey: #f7f7f7
 
+*
+    &:focus,
+    &:active,
+    &:visited
+        outline: none
+        
+
 html, 
 body
     font-family: "proxima"
@@ -41,17 +48,20 @@ a
 .jq-selectbox__select-text
     border-bottom: dashed 1px #000
     background: none
-    padding: 10px
     cursor: pointer
     
 .jq-selectbox__dropdown
-    border: 1px solid #333
-    background: #e6e6e6
+    border: 1px solid #bdbdbd
+    background: #fff
     width: auto !important
+    border-radius: 3px
+    margin-top: 5px
     li
-        border-bottom: 1px solid #333
+        border-bottom: 1px solid #bdbdbd
         cursor: pointer
         padding: 5px 10px
+        &:last-child
+            border-bottom: none
         
          
 .clearfix
