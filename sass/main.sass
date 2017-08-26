@@ -330,6 +330,19 @@
     display: flex
     flex-direction: right 
 
+@media screen and (max-width: 1140px)
+    .tabs__content-item-wrapper
+        justify-content: space-between
+    .tabs__content
+        &-item
+            border: 1px solid #e6e6e6
+            max-width: 358px
+            margin: 0 0 20px 0
+            
+@media screen and (width: 1024px)
+    .tabs__content-item-wrapper
+        justify-content: space-around
+            
         
 @media screen and (max-width: 1033px)
     .city
@@ -361,7 +374,7 @@
             font-size: 27px
     .tabs__content-item
         margin-left: auto
-        margin-right: auto
+        margin-right: auto !important
     .tabs__content-item-wrapper
         padding: 0 10px
     .tabs__caption
