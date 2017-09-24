@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Доска объявлений</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="wrapper"> <!-- grid -->
+        <div class="header"> <!-- grid row -->
+            <a href="#" class="header__item bb">Бюро находок</a>
+            <div class="header__item city">Поиск в регионе: 
+                <select name="cit" id="cit">
+                    <option value="aty">Алматы</option>
+                    <option value="ast">Астанa</option>
+                    <option value="url">Уральск</option>
+                </select>
+            </div>
+            <a href="#lose" class="header__item br popup-with-form">Заявить о пропаже</a>
+            <a href="#found" class="header__item bo popup-with-form">Заявить о находке</a>
+            <div class="header__item phone">Телефон для справок:<br><span><a href="tel:+77073528888">8 (707) 352 8888</a></span></div>
+        </div>
+        <div class="header_responsive">
+            <div class="header_r__row left">
+                <a href="#" class="header_r__row-logo bbr">Бюро находок</a>
+                <div class="header_r__row-phone phoner">Телефон для справок:<br><span><a href="tel:+77073528888">8 (707) 352 8888</a></span></div>
+            </div>
+            <div class="header_r__row riht">
+                <a href="#lose" class="header_r__row-lose brr popup-with-form">Заявить о пропаже</a>
+                <a href="#found" class="header_r__row-found bor popup-with-form">Заявить о находке</a>
+            </div>
+            <div class="header_r__row riht">
+                <div class="header_r__row-city city">Поиск в регионе: 
+                    <select name="cit" id="cit">
+                        <option value="aty">Алматы</option>
+                        <option value="ast">Астанa</option>
+                        <option value="url">Уральск</option>
+                    </select>
+                </div>
+            </div>
+        </div>        
+    </div>
+    <div class="main">
+        <h1>Подайте объявление сейчас, чтобы найти<br> - бесплатно и быстро! </h1> 
+        <div class="search">
+            <form action="search.php" method="get">
+                <button type="submit"></button>
+                <input type="text" name="q" placeholder="Поиск объявлений: ключи, кошелёк...">
+            </form>  
+        </div>
+    </div>
+    <div class="wrapper"> <!-- grid -->
+        <div class="breadcrumbs"> <!-- grid row -->
+            <a href="#" class="breadcrumb__item breadcrumb__item-active">Главная</a><a href="#" class="breadcrumb__item">Объявления в Алматы</a>
+        </div>
+        <div class="tabs">
+
+          <ul class="tabs__caption">
+            <li class="active">Пропало</li>
+            <li>Найдено</li>
+          </ul>
+
+          <div class="tabs__content active">
+            <div class="tabs__content-item-wrapper">
+                <div class="tabs__content-item">
+                    <div class="item_text">
+                        <h2 class="item_header">Найден кошелек</h2>
+                        <p class="item_desc">Найден кошелек с документами и картами на имя Турдалы Бексултан.</p>
+                    </div>
+                    <div class="item_info">
+                        <span class="date">Добавлено: 7 августа 2017,<br>Номер объявления: 32432</span><a href="#answer" class="popup-with-form">Откликнуться</a>
+                    </div>
+                </div>
+                <div class="tabs__content-item">
+                    <div class="item_text">
+                        <h2 class="item_header">Найден кошелек</h2>
+                        <p class="item_desc">Найден кошелек с документами и картами на имя Турдалы Бексултан.</p>
+                    </div>
+                    <div class="item_info">
+                        <span class="date">Добавлено: 7 августа 2017,<br>Номер объявления: 32432</span><a href="">Откликнуться</a>
+                    </div>
+                </div>
+                <div class="tabs__content-item">
+                    <div class="item_text">
+                        <h2 class="item_header">Найден кошелек</h2>
+                        <p class="item_desc">Найден кошелек с документами и картами на имя Турдалы Бексултан.</p>
+                    </div>
+                    <div class="item_info">
+                        <span class="date">Добавлено: 7 августа 2017,<br>Номер объявления: 32432</span><a href="">Откликнуться</a>
+                    </div>
+                </div>
+                <div class="tabs__content-item">
+                    <div class="item_text">
+                        <h2 class="item_header">Найден кошелек</h2>
+                        <p class="item_desc">Найден кошелек с документами и картами на имя Турдалы Бексултан.</p>
+                    </div>
+                    <div class="item_info">
+                        <span class="date">Добавлено: 7 августа 2017,<br>Номер объявления: 32432</span><a href="">Откликнуться</a>
+                    </div>
+                </div>
+                <div class="tabs__content-item">
+                    <div class="item_text">
+                        <h2 class="item_header">Найден кошелек</h2>
+                        <p class="item_desc">Найден кошелек с документами и картами на имя Турдалы Бексултан.</p>
+                    </div>
+                    <div class="item_info">
+                        <span class="date">Добавлено: 7 августа 2017,<br>Номер объявления: 32432</span><a href="">Откликнуться</a>
+                    </div>
+                </div>
+                <div class="tabs__content-item">
+                    <div class="item_text">
+                        <h2 class="item_header">Найден кошелек</h2>
+                        <p class="item_desc">Найден кошелек с документами и картами на имя Турдалы Бексултан.</p>
+                    </div>
+                    <div class="item_info">
+                        <span class="date">Добавлено: 7 августа 2017,<br>Номер объявления: 32432</span><a href="">Откликнуться</a>
+                    </div>
+                </div>
+                <div class="tabs__content-item">
+                    <div class="item_text">
+                        <h2 class="item_header">Найден кошелек</h2>
+                        <p class="item_desc">Найден кошелек с документами и картами на имя Турдалы Бексултан.</p>
+                    </div>
+                    <div class="item_info">
+                        <span class="date">Добавлено: 7 августа 2017,<br>Номер объявления: 32432</span><a href="">Откликнуться</a>
+                    </div>
+                </div>
+            </div>
+            <div class="tabs__content-pagination">
+                <a href="#">&laquo;</a>
+                <a href="#">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">&raquo;</a>
+            </div>
+          </div>
+
+          <div class="tabs__content">
+            <div class="tabs__content-item-wrapper">
+                <div class="tabs__content-item">
+                    <div class="item_text">
+                        <h2 class="item_header">Kjk кошелек</h2>
+                        <p class="item_desc">Найден кошелек с документами и картами на имя Турдалы Бексултан.</p>
+                    </div>
+                    <div class="item_info">
+                        <span class="date">Добавлено: 7 августа 2017,<br>Номер объявления: 32432</span><a href="">Откликнуться</a>
+                    </div>
+                </div>
+                <div class="tabs__content-item">
+                    <div class="item_text">
+                        <h2 class="item_header">Найден кошелек</h2>
+                        <p class="item_desc">Найден кошелек с документами и картами на имя Турдалы Бексултан.</p>
+                    </div>
+                    <div class="item_info">
+                        <span class="date">Добавлено: 7 августа 2017,<br>Номер объявления: 32432</span><a href="">Откликнуться</a>
+                    </div>
+                </div>
+                <div class="tabs__content-item">
+                    <div class="item_text">
+                        <h2 class="item_header">Найден кошелек</h2>
+                        <p class="item_desc">Найден кошелек с документами и картами на имя Турдалы Бексултан.</p>
+                    </div>
+                    <div class="item_info">
+                        <span class="date">Добавлено: 7 августа 2017,<br>Номер объявления: 32432</span><a href="">Откликнуться</a>
+                    </div>
+                </div>
+                <div class="tabs__content-item">
+                    <div class="item_text">
+                        <h2 class="item_header">Найден кошелек</h2>
+                        <p class="item_desc">Найден кошелек с документами и картами на имя Турдалы Бексултан.</p>
+                    </div>
+                    <div class="item_info">
+                        <span class="date">Добавлено: 7 августа 2017,<br>Номер объявления: 32432</span><a href="">Откликнуться</a>
+                    </div>
+                </div>
+                <div class="tabs__content-item">
+                    <div class="item_text">
+                        <h2 class="item_header">Найден кошелек</h2>
+                        <p class="item_desc">Найден кошелек с документами и картами на имя Турдалы Бексултан.</p>
+                    </div>
+                    <div class="item_info">
+                        <span class="date">Добавлено: 7 августа 2017,<br>Номер объявления: 32432</span><a href="">Откликнуться</a>
+                    </div>
+                </div>
+            </div>
+            <div class="tabs__content-pagination">
+                <a href="#">&laquo;</a>
+                <a href="#">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">5</a>
+                <a href="#">6</a>
+                <a href="#">&raquo;</a>
+            </div>
+          </div>
+        <div class="clearfix"></div>
+        </div><!-- .tabs-->
+    </div>
+    <div class="footer"> <!-- grid row -->
+        <div class="footer_row">
+            <ul class="footer__column">
+                <li class="footer__column-item"><a href="">Объявления</a></li>
+                <li class="footer__column-item"><a href="">Магазины</a></li>
+                <li class="footer__column-item"><a href="">Платные услуги</a></li>
+                <li class="footer__column-item"><a href="">Помощь</a></li>
+            </ul>
+            <ul class="footer__column">
+                <li class="footer__column-item"><a href="">Объявления</a></li>
+                <li class="footer__column-item"><a href="">Магазины</a></li>
+                <li class="footer__column-item"><a href="">Платные услуги</a></li>
+                <li class="footer__column-item"><a href="">Помощь</a></li>
+            </ul>
+        </div>
+        <div class="footer_row">
+            <ul class="footer__column">
+                <li class="footer__column-item"><a href="">Объявления</a></li>
+                <li class="footer__column-item"><a href="">Магазины</a></li>
+                <li class="footer__column-item"><a href="">Платные услуги</a></li>
+                <li class="footer__column-item"><a href="">Помощь</a></li>
+            </ul>
+            <ul class="footer__column">
+                <li class="footer__column-item"><a href="">Объявления</a></li>
+                <li class="footer__column-item"><a href="">Магазины</a></li>
+                <li class="footer__column-item"><a href="">Платные услуги</a></li>
+                <li class="footer__column-item"><a href="">Помощь</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <form id="lose" class="white-popup-block mfp-hide" method="post">
+        <fieldset style="border:0;">
+            <h1>Заявить о пропаже</h1>
+            <p>Заполните поля ниже и мы <br>опубликуем вашу ззявку</p>
+            <input type="text" name="fio" placeholder="Ф.И.О">
+            <input type="text" name="tel" placeholder="Телефон">
+            <textarea name="desc" placeholder="Подробности" rows="5"></textarea>
+            <input type="submit" class="submit" value="Отправить">
+        </fieldset>
+    </form>
+    
+    <form id="found" class="white-popup-block mfp-hide" method="post">
+        <fieldset style="border:0;">
+            <h1>Заявить о находке</h1>
+            <p>Заполните поля ниже и мы <br>опубликуем вашу ззявку</p>
+            <input type="text" name="fio" placeholder="Ф.И.О">
+            <input type="text" name="tel" placeholder="Телефон">
+            <textarea name="desc" placeholder="Подробности" rows="5"></textarea>
+            <input type="submit" class="submit" value="Отправить">
+        </fieldset>
+    </form>
+    
+    <form id="answer" class="white-popup-block mfp-hide" method="post">
+        <fieldset style="border:0;">
+            <h1>Откликнуться</h1>
+            <p>Заполните поля ниже и мы <br>опубликуем вашу ззявку</p>         
+            <input type="text" name="fio" placeholder="Ф.И.О">
+            <input type="text" name="tel" placeholder="Телефон">
+            <textarea name="desc" placeholder="Подробности" rows="5"></textarea>
+            <input type="submit" class="submit" value="Отправить">
+        </fieldset>
+    </form>
+    
+<script src="js/jquery.js"></script>
+<script src="js/main.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.formstyler/1.7.8/jquery.formstyler.min.js"></script>
+</body>
+</html>
