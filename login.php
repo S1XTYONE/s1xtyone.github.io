@@ -24,6 +24,7 @@ if(isset($_POST['submit']))
     <form action="#" method="post">
         email: <input type="email" name="email"><br>
         pass: <input type="password" name="pass">
+        <input type="submit" name="submit" value="Вход">
     </form>
 </body>
 </html>
